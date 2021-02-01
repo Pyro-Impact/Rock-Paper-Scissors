@@ -9,7 +9,7 @@ paper scissors game. I didn't use the rest of the article.
 I wanted to refine the program so I found an answer here: https://codereview.stackexchange.com/a/147794
 
 Dictionaries were not familiar to me, and reading the answer and modifying it for myself has led me to understand 
-them better for sure.
+them well.
 
 Main Modifications:
 1. Added an option for the user to loop the program or quit the program.
