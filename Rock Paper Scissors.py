@@ -2,10 +2,8 @@ import random
 
 while True:
     print("Welcome to the Rock Paper Scissors game!")
-
     while True:
         players_choice = input("Choose Rock, Paper, or Scissors.")
-
         if players_choice.title() in ["Rock", "Paper", "Scissors"]:
             break
         print("Please enter a valid input.")
@@ -37,21 +35,19 @@ while True:
             lose = f"{computer_choice} {verb_details[computer_choice]} {player_choice_t}. You lose."
             return lose
         else:
-            result = f"The {player_choice_t}(s) {draw[player_choice_t]} each other, and it's a draw."
-            return result
+            tie = f"The {player_choice_t}(s) {draw[player_choice_t]} each other, and it's a draw."
+            return tie
 
     print(final_result())
 
     while True:
         cont_choice = input("Would you like to play again? Type (yes/no): ")
-
         if cont_choice.lower() in ("yes", "no"):
             break
         print("Invalid input.")
 
     if cont_choice.lower() == "yes":
         continue
-
     else:
         print("Thanks for playing!")
         break
